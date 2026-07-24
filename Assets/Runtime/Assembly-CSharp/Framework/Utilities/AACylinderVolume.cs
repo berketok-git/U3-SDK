@@ -37,7 +37,7 @@ namespace SDG.Framework.Utilities
 
 		public float internalVolume => height * Mathf.PI * radius * radius;
 
-		public float surfaceArea => Mathf.PI * radius * radius;
+		public float surfaceArea => 2 * Mathf.PI * radius * (radius + height);
 
 		public AACylinderVolume(Vector3 newCenter, float newRadius, float newHeight)
 		{
